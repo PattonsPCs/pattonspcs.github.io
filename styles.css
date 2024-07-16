@@ -1,6 +1,6 @@
 body {
-    background-color: black;
-    color: #E0E0E0;
+    background: linear-gradient(to right, #000000, #434343); /* Change background to dark gradient */
+    color: #E0E0E0; /* Default text color */
     font-family: Arial, sans-serif;
 }
 
@@ -9,26 +9,25 @@ body {
 }
 
 h1 {
-    color: #E0E0E0;
+    color: #E74C3C; /* Change header color to embers red for contrast */
     text-align: center;
 }
 
 .paragraph {
-    background-color: #E74C3C;
+    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%); /* Keep the gradient */
     padding: 20px;
     margin: 20px 0;
     display: flex;
     align-items: center;
     border-radius: 8px;
-    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%);
 }
 
 .text {
     flex: 1;
-    color: #E0E0E0;
+    color: #E0E0E0; /* Keep the text color */
     font-family: 'Georgia', serif;
     font-style: italic;
-    background: -webkit-linear-gradient(white, #E0E0E0);
+    background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -45,7 +44,7 @@ h1 {
 }
 
 a {
-    color: #E0E0E0;
+    color: #E74C3C; /* Change link color to match theme */
     text-decoration: underline;
 }
 
@@ -61,8 +60,8 @@ ul li {
 footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #E74C3C;
-    color: #E0E0E0;
+    background-color: #E74C3C; /* Keep footer background */
+    color: #E0E0E0; /* Footer text color */
     position: fixed;
     bottom: 0;
     width: 100%;
