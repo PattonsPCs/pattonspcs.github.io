@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to right, #898383, #c0b2b2); /* Lighter gradient for background */
+    background: linear-gradient(to right, #2C2C2C, #4F4F4F); /* Lighter gradient for background */
     color: #E0E0E0; /* Default text color */
     font-family: Arial, sans-serif;
 }
@@ -12,13 +12,19 @@ nav {
     margin: 20px 0; /* Space between header and content */
 }
 
-h1 {
-    color: #E74C3C; /* Keep header color to embers red for contrast */
-    text-align: center;
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #E0E0E0;
 }
 
 .page {
     padding: 20px;
+}
+
+h1 {
+    color: #E74C3C; /* Keep header color to embers red for contrast */
+    text-align: center;
 }
 
 .paragraph {
@@ -28,6 +34,7 @@ h1 {
     display: flex;
     align-items: center;
     border-radius: 8px;
+    flex-direction: row; /* Default flex direction for larger screens */
 }
 
 .text {
@@ -37,7 +44,6 @@ h1 {
     font-style: italic;
     background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
     -webkit-background-clip: text;
-            background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -75,4 +81,27 @@ footer {
     bottom: 0;
     width: 100%;
     border-radius: 8px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .paragraph {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+        text-align: center;
+    }
+
+    .image {
+        text-align: center; /* Center images on smaller screens */
+        margin-top: 10px; /* Add margin for spacing */
+    }
+
+    nav a {
+        display: block; /* Stack nav links vertically */
+        margin: 10px 0; /* Add margin between links */
+    }
+
+    footer {
+        position: static; /* Make footer static for smaller screens */
+        border-radius: 0;
+    }
 }
