@@ -14,15 +14,23 @@ h1 {
 }
 
 .paragraph {
-    background-color: #FF4500;
+    background-color: #E74C3C;
     padding: 20px;
     margin: 20px 0;
     display: flex;
     align-items: center;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%);
 }
 
 .text {
     flex: 1;
+    color: #E0E0E0;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    background: -webkit-linear-gradient(white, #E0E0E0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .image {
@@ -33,6 +41,7 @@ h1 {
 .image img {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 a {
@@ -47,4 +56,15 @@ ul {
 
 ul li {
     margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #E74C3C;
+    color: #E0E0E0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-radius: 8px;
 }
