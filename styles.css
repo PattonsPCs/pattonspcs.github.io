@@ -37,6 +37,7 @@ h1 {
     font-style: italic;
     background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
