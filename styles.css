@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: #E0E0E0;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    padding: 20px;
+}
+
+h1 {
+    color: #E0E0E0;
+    text-align: center;
+}
+
+.paragraph {
+    background-color: #FF4500;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+}
+
+.image {
+    flex: 1;
+    text-align: right;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #E0E0E0;
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
