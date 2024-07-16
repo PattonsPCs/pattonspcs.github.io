@@ -23,8 +23,14 @@ nav a {
 }
 
 h1 {
-    color: #333333; /* Keep header color to embers red for contrast */
+    color: #ffffff; /* Change heading color to white */
     text-align: center;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for marbled effect */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .paragraph {
@@ -44,7 +50,7 @@ h1 {
     font-style: italic;
     background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
     -webkit-background-clip: text;
-            background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -62,6 +68,7 @@ h1 {
 a {
     color: #E74C3C; /* Change link color to match theme */
     text-decoration: underline;
+    font-size: 1.2em; /* Make links larger */
 }
 
 ul {
@@ -71,6 +78,18 @@ ul {
 
 ul li {
     margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%); /* Paragraph background for links */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+ul li img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
 }
 
 footer {
