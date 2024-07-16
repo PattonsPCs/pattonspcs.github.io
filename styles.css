@@ -44,6 +44,7 @@ h1 {
     font-style: italic;
     background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
     -webkit-background-clip: text;
+            background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -74,7 +75,7 @@ ul li {
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 5px 0; /* Reduced padding to make the footer shorter */
     background-color: #E74C3C; /* Keep footer background */
     color: #E0E0E0; /* Footer text color */
     position: fixed;
