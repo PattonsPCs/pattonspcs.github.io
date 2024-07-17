@@ -97,7 +97,7 @@ footer {
     padding: 0px 0; /* Adjust padding to change height */
     background-color: #E74C3C; /* Keep footer background */
     color: #E0E0E0; /* Footer text color */
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 110%;
     height: 35px; /* Adjust height as needed */
