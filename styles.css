@@ -98,7 +98,7 @@ footer {
     color: #E0E0E0; /* Footer text color */
     position: static;
     bottom: 0;
-    width: 100%;
+    width: 1000px;
     height: 35px; /* Adjust height as needed */
     border-radius: 8px;
 }
