@@ -111,7 +111,6 @@ footer {
     right: 0; /* Ensure footer ends at the right edge */
     width: 100%;
     height: 35px; /* Adjust height as needed */
-    border-radius: 0; /* Remove border radius if there's still a gap */
 }
 
 /* Media Queries for Responsive Design */
