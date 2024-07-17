@@ -96,7 +96,7 @@ footer {
     text-align: center;
     background-color: #E74C3C; /* Keep footer background */
     color: #E0E0E0; /* Footer text color */
-    position: static;
+    position: fixed;
     bottom: 0;
     width: 1000px;
     height: 35px; /* Adjust height as needed */
