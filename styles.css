@@ -41,6 +41,17 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h2 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    background: -webkit-linear-gradient(white, #E0E0E0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .paragraph {
     background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%); /* Keep the paragraph gradient */
     padding: 20px;
