@@ -85,7 +85,6 @@ h2 {
     border-radius: 8px;
     /* CSS for the fade-in effect */
     opacity: 0; /* Start with images hidden */
-    transition: opacity 2s ease-in; /* Transition effect */
     transform: translateY(20px); /* Start with images slightly below their final position */
     animation: fadeInUp 2s ease-in-out forwards; /* Apply animation */
 }
@@ -128,6 +127,18 @@ footer {
     right: 0; /* Ensure footer ends at the right edge */
     width: 100%;
     height: 35px; /* Adjust height as needed */
+}
+
+/* Keyframes for fade-in and slide-up animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media Queries for Responsive Design */
