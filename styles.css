@@ -12,6 +12,13 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* Common animation class */
+.fade-in-up {
+    opacity: 0; /* Start with elements hidden */
+    transform: translateY(20px); /* Start with elements slightly below their final position */
+    animation: fadeInUp 2s ease-in-out forwards; /* Apply animation */
+}
+
 nav {
     background: rgba(46, 46, 46, 0.8); /* Semi-transparent dark background for the nav */
     padding: 10px;
@@ -30,23 +37,12 @@ nav a {
     padding: 20px;
 }
 
-h1 {
+h1, h2 {
     color: #ffffff; /* Change heading color to white */
     text-align: center;
     font-family: 'Georgia', serif;
     font-style: italic;
     background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for marbled effect */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-h2 {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    background: -webkit-linear-gradient(white, #E0E0E0);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -83,10 +79,6 @@ h2 {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    /* CSS for the fade-in effect */
-    opacity: 0; /* Start with images hidden */
-    transform: translateY(20px); /* Start with images slightly below their final position */
-    animation: fadeInUp 2s ease-in-out forwards; /* Apply animation */
 }
 
 a {
