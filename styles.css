@@ -85,6 +85,7 @@ h2 {
     border-radius: 8px;
     /* CSS for the fade-in effect */
     opacity: 0; /* Start with images hidden */
+    transition: opacity 2s ease-in; /* Transition effect */
     transform: translateY(20px); /* Start with images slightly below their final position */
     animation: fadeInUp 2s ease-in-out forwards; /* Apply animation */
 }
