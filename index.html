@@ -109,5 +109,14 @@
             document.getElementById(tabId).classList.add('active');
         }
     </script>
+
+    <script>
+        window.addEventListener('load', function() {
+            const images = document.querySelectorAll('.image img');
+            images.forEach(image => {
+                image.style.opacity = 1; /* Trigger the fade-in effect */
+            });
+        });
+    </script>
 </body>
 </html>
