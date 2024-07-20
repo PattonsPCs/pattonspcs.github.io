@@ -11,16 +11,16 @@
     <link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-    <nav class="fade-in-up">
+    <nav>
         <a href="#" onclick="showTab('home')">Home</a>
         <a href="#" onclick="showTab('calendar')">Calendar and Scheduling</a>
         <a href="#" onclick="showTab('social')">Social Media</a>
     </nav>
 
-    <div id="home" class="tab active fade-in-up">
-        <h1 class="fade-in-up">Welcome to Patton's PC Clinic!</h1>
-        <h2 class="fade-in-up">Fixing Computers for Peanuts Since 2023: Where Our Prices Are Smaller And Our Repairs Are Bigger In Quality!</h2>
-        <div class="paragraph fade-in-up">
+    <div id="home" class="tab active">
+        <h1>Welcome to Patton's PC Clinic!</h1>
+        <h2>Fixing Computers for Peanuts Since 2023: Where Our Prices Are Smaller And Our Repairs Are Bigger In Quality!</h2>
+        <div class="paragraph">
             <div class="text">
                 <p>I specialize in repairing all types of computer issues, big or small. Whether you have a broken laptop screen, a malfunctioning desktop, or even software troubles, I've got you covered! My goal is to provide fast and efficient repairs to get you back up and running in no time. With years of experience and a passion for technology, I guarantee satisfaction with every service.</p>
             </div>
@@ -28,7 +28,7 @@
                 <img src="images/laptop.png" alt="Broken Laptop Screen">
             </div>
         </div>
-        <div class="paragraph fade-in-up">
+        <div class="paragraph">
             <div class="text">
                 <p>In the current economy, can you really spend more money for your inevitable device repairs? I believe in providing top-quality service without breaking the bank. Unlike many competitors, I offer transparent pricing with no hidden fees. Whether it’s a simple fix or a complex issue, you can trust that you’re getting the best value for your money. Quality service shouldn’t come with a hefty price tag, and I’m here to prove it!</p>
             </div>
@@ -38,9 +38,9 @@
         </div>
     </div>
 
-    <div id="calendar" class="tab fade-in-up">
-        <h1 class="fade-in-up">Calendar and Scheduling</h1>
-        <div class="paragraph fade-in-up">
+    <div id="calendar" class="tab">
+        <h1>Calendar and Scheduling</h1>
+        <div class="paragraph">
             <div class="text">
                 <p>Check out my Calendly page and find a time that works for you!</p>
             </div>
@@ -51,9 +51,9 @@
         <!-- Calendly inline widget end -->
     </div>
 
-    <div id="social" class="tab fade-in-up">
-        <h1 class="fade-in-up">Follow Me on Social Media</h1>
-        <ul class="fade-in-up">
+    <div id="social" class="tab">
+        <h1>Follow Me on Social Media</h1>
+        <ul>
             <li>
                 <img src="images/instalogo.png" alt="Instagram Logo">
                 Instagram: <a href="https://instagram.com/pattons_pcs" target="_blank">Patton's PC Clinic</a>
@@ -65,7 +65,7 @@
         </ul>
     </div>
 
-    <footer class="fade-in-up">
+    <footer>
         <p>&copy; 2024 Patton's PC Clinic</p>
     </footer>
 
@@ -81,10 +81,12 @@
             document.getElementById(tabId).classList.add('active');
         }
 
+        // Function to trigger animations on load
         window.addEventListener('load', function() {
-            const fadeElements = document.querySelectorAll('.fade-in-up');
-            fadeElements.forEach(element => {
-                element.style.opacity = 1; /* Trigger the fade-in effect */
+            const elements = document.querySelectorAll('.fade-in-up');
+            elements.forEach(element => {
+                element.style.opacity = 1;
+                element.style.transform = 'translateY(0)';
             });
         });
     </script>
