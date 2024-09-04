@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Head of the HTML-->>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +12,17 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
 </head>
+
+<!--Body-->
 <body>
+    <!--Tabs-->
     <nav>
         <a href="#" onclick="showTab('home')">Home</a>
         <a href="#" onclick="showTab('calendar')">Calendar and Scheduling</a>
         <a href="#" onclick="showTab('social')">Social Media and Reviews</a>
     </nav>
 
+    <!--Home Tab-->
     <div id="home" class="tab active">
         <h1>Welcome to Patton's PC Clinic!</h1>
         <h2>Fixing Computers for Peanuts Since 2023: Where Our Prices Are Smaller And Our Repairs Are Bigger In Quality!</h2>
@@ -38,6 +44,7 @@
         </div>
     </div>
 
+    <!--Calendar Tab-->
     <div id="calendar" class="tab">
         <h1>Calendar and Scheduling</h1>
         <div class="paragraph">
@@ -51,12 +58,13 @@
         <!-- Calendly inline widget end-->
     </div>
 
+    <!--Social Media Tab + Reviews ;-;-->
     <div id="social" class="tab">
     <h1>Follow Me on Social Media</h1>
         <ul>
             <li>
                 <img src="images/instalogo.png" alt="Instagram Logo">
-                Instagram: <a href="https://instagram.com/pattons_pcs">Patton's PC Clinic</a>
+                Instagram: <a href="https://instagram.com/pattons_pcs" target="_blank">Patton's PC Clinic</a>
             </li>
             <li>
                 <img src="images/youtubelogo.png" alt="YouTube Logo">
@@ -69,6 +77,7 @@
         <p>&copy; 2024 Patton's PC Clinic</p>
     </footer>
 
+    <!--Javascript area for Transitions and hiding tabs-->
     <script>
         function showTab(tabId) {
             // Hide all tabs
