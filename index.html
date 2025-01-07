@@ -1,108 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!--Head of the HTML-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patton's PC Clinic</title>
+    <title>Patton's PC Clinic - Professional Computer Repair Services</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!--Tabs-->
     <nav>
         <a href="#" onclick="showTab('home')">Home</a>
-        <a href="#" onclick="showTab('calendar')">Calendar and Scheduling</a>
-        <a href="#" onclick="showTab('social')">Social Media</a>
+        <a href="#" onclick="showTab('services')">Services</a>
+        <a href="#" onclick="showTab('calendar')">Schedule Repair</a>
+        <a href="#" onclick="showTab('social')">Connect</a>
         <a href="#" onclick="showTab('review-area')">Reviews</a>
     </nav>
 
-    <!--Home Tab-->
     <div id="home" class="tab active">
-        <h1>Welcome to Patton's PC Clinic!</h1>
-        <h2>Fixing Computers for Peanuts Since 2023: Where Our Prices Are Smaller And Our Repairs Are Bigger In Quality!</h2>
+        <div class="hero">
+            <h1>Patton's PC Clinic</h1>
+            <h2>Professional Computer Repair Services at Affordable Prices</h2>
+        </div>
+        
         <div class="paragraph">
             <div class="text">
-                <p>I specialize in repairing all types of computer issues, big or small. Whether you have a broken laptop screen, a malfunctioning desktop, or even software troubles, I've got you covered! My goal is to provide fast and efficient repairs to get you back up and running in no time. With years of experience and a passion for technology, I guarantee satisfaction with every service.</p>
+                <h3>Expert Computer Repair Services</h3>
+                <p>At Patton's PC Clinic, we specialize in comprehensive computer repair solutions for both personal and business needs. With our expertise in hardware and software troubleshooting, we ensure your devices are restored to optimal performance quickly and efficiently.</p>
             </div>
             <div class="image">
-                <img src="images/laptop.png" alt="Broken Laptop Screen">
+                <img src="images/laptop.png" alt="Professional Computer Repair">
             </div>
         </div>
+
         <div class="paragraph">
-            <div class="text">
-                <p>In the current economy, can you really spend more money for your inevitable device repairs? I believe in providing top-quality service without breaking the bank. Unlike many competitors, I offer transparent pricing with no hidden fees. Whether it’s a simple fix or a complex issue, you can trust that you’re getting the best value for your money. Quality service shouldn’t come with a hefty price tag, and I’m here to prove it!</p>
-            </div>
             <div class="image">
-                <img src="images/business.jpg" alt="Businessman Shaking Hands with Client">
+                <img src="images/business.jpg" alt="Quality Service Guarantee">
+            </div>
+            <div class="text">
+                <h3>Quality Service, Competitive Pricing</h3>
+                <p>We believe in transparent pricing and exceptional service. Our commitment to providing cost-effective solutions means you receive professional-grade repairs without the premium price tag. Every repair comes with our satisfaction guarantee.</p>
             </div>
         </div>
     </div>
 
-    <!--Calendar Tab-->
     <div id="calendar" class="tab">
-        <h1>Calendar and Scheduling</h1>
-        <div class="paragraph">
-            <div class="text">
-                <p>Check out my Calendly page and find a time that works for you!</p>
-            </div>
+        <div class="hero">
+            <h1>Schedule Your Repair</h1>
+            <h2>Book a convenient time for your computer repair</h2>
         </div>
-        <!-- Calendly inline widget begin -->
-        <div class="calendly-inline-widget" data-url="https://calendly.com/pattonspcs?background_color=e0e0e0&text_color=c0392b&primary_color=817e7e" style="min-width:320px;height:700px;"></div>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/pattonspcs?background_color=f8f9fa&text_color=2c3e50&primary_color=3498db" style="min-width:320px;height:700px;"></div>
         <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-        <!-- Calendly inline widget end-->
     </div>
 
-    <!--Social Media Tab-->
     <div id="social" class="tab">
-    <h1>Follow Me on Social Media</h1>
+        <div class="hero">
+            <h1>Connect With Us</h1>
+            <h2>Follow us on social media for tech tips and updates</h2>
+        </div>
         <ul>
             <li>
                 <img src="images/instalogo.png" alt="Instagram Logo">
-                Instagram: <a href="https://instagram.com/pattons_pcs" target="_blank">Patton's PC Clinic</a>
+                <a href="https://instagram.com/pattons_pcs" target="_blank">Follow us on Instagram</a>
             </li>
             <li>
                 <img src="images/youtubelogo.png" alt="YouTube Logo">
-                YouTube: <a href="https://youtube.com/@pattons-pcs" target="_blank">Patton's PC Clinic</a>
+                <a href="https://youtube.com/@pattons-pcs" target="_blank">Subscribe to our YouTube Channel</a>
             </li>
         </ul>
     </div>
 
-     <!--Review Tab-->
-
-    <div id="review-area" class="tab"> 
-        <h1>Reviews</h1>
+    <div id="review-area" class="tab">
+        <div class="hero">
+            <h1>Client Reviews</h1>
+            <h2>Share your experience with our services</h2>
+        </div>
         <form id="review-form">
-            <label for="review">Leave a Review Here:</label>
-            <textarea id="review" name="review" rows="4" placeholder="Write your review here..." required></textarea>
+            <label for="review">Your Feedback</label>
+            <textarea id="review" name="review" rows="4" placeholder="Tell us about your experience..." required></textarea>
             <button type="submit">Submit Review</button>
         </form>
     </div>
 
-    <!--Footer-->
     <footer>
-        <p>&copy; 2024 Patton's PC Clinic</p>
+        <p>&copy; 2024 Patton's PC Clinic | Professional Computer Repair Services</p>
     </footer>
 
-    <!--Javascript area for Transitions and hiding tabs-->
     <script>
         function showTab(tabId) {
-            // Hide all tabs
             const tabs = document.querySelectorAll('.tab');
             tabs.forEach(tab => {
                 tab.classList.remove('active');
             });
-
-            // Show the selected tab
             document.getElementById(tabId).classList.add('active');
+            window.scrollTo(0, 0);
         }
 
-        // Function to trigger animations on load
         window.addEventListener('load', function() {
             const elements = document.querySelectorAll('.fade-in-up');
             elements.forEach(element => {
