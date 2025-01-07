@@ -202,3 +202,135 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* Add these new styles to your existing CSS */
+
+/* Social Media Grid */
+.social-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.social-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-card img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.social-button:hover {
+    background: var(--primary-color);
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--secondary-color);
+    color: var(--white);
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* Reviews Page */
+.reviews-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.review-form-section {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.testimonials {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.review-card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.rating {
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.reviewer {
+    display: block;
+    margin-top: 1rem;
+    color: var(--text-color);
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+}
