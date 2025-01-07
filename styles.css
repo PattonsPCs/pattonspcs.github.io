@@ -1,243 +1,204 @@
+/* Modern Professional Theme */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --text-color: #2c3e50;
+    --light-bg: #f8f9fa;
+    --white: #ffffff;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--text-color);
+    background: var(--white);
+    line-height: 1.6;
 }
 
-body {
-    background: linear-gradient(to right, #817e7e, #d1cbcb); /* Lighter gradient for background */
-    color: #E0E0E0; /* Default text color */
-    font-family: Arial, sans-serif;
-}
-
+/* Modern Navigation */
 nav {
-    background: rgba(46, 46, 46, 0.8); /* Semi-transparent dark background for the nav */
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
-    margin: 20px 0; /* Space between header and content */
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
-    margin: 0 15px;
+    color: var(--text-color);
     text-decoration: none;
-    color: #E0E0E0;
+    margin: 0 1.5rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    font-size: 1rem;
 }
 
-.page {
-    padding: 20px;
+nav a:hover {
+    color: var(--secondary-color);
 }
 
-h1 {
-    color: #ffffff; /* Change heading color to white */
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 8rem 2rem 4rem;
     text-align: center;
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for marbled effect */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--white);
 }
 
-h2 {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    background: -webkit-linear-gradient(white, #E0E0E0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--white);
 }
 
+.hero h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.9);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Content Sections */
 .paragraph {
-    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%); /* Keep the paragraph gradient */
-    padding: 20px;
-    margin: 20px 0;
+    background: var(--white);
+    padding: 4rem 2rem;
+    margin: 0;
     display: flex;
     align-items: center;
-    border-radius: 8px;
-    flex-direction: row; /* Default flex direction for larger screens */
+    gap: 4rem;
+}
+
+.paragraph:nth-child(even) {
+    background: var(--light-bg);
 }
 
 .text {
     flex: 1;
-    color: #E0E0E0; /* Keep text color */
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+    color: var(--text-color);
+    font-family: inherit;
+    font-style: normal;
+    -webkit-text-fill-color: initial;
+}
+
+.text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
 .image {
     flex: 1;
-    text-align: right;
 }
 
 .image img {
     max-width: 100%;
-    height: auto;
     border-radius: 8px;
-    /* CSS for the fade-in and slide-up effect */
-    opacity: 0; /* Start with images hidden */
-    transform: translateY(20px); /* Start with images slightly below their final position */
-    animation: fadeInUp 2s ease-in-out forwards; /* Apply animation */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
-a {
-    color: #ebe6e6; /* Change link color to match theme */
-    text-decoration: underline;
-    font-size: 1.2em; /* Make links larger */
+/* Calendar Section */
+#calendar {
+    padding: 6rem 2rem 4rem;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%); /* Paragraph background for links */
-    padding: 15px;
+.calendly-inline-widget {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
     border-radius: 8px;
+    margin: 2rem auto;
 }
 
-ul li img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+/* Social Media Section */
+#social {
+    padding: 6rem 2rem 4rem;
 }
 
-footer {
-    text-align: center;
-    padding: 5px 0; /* Adjust padding to change height */
-    background-color: #E74C3C; /* Keep footer background */
-    color: #E0E0E0; /* Footer text color */
-    position: fixed;
-    bottom: 0;
-    left: 0; /* Ensure footer starts from the left edge */
-    right: 0; /* Ensure footer ends at the right edge */
-    width: 100%;
-    height: 35px; /* Adjust height as needed */
+#social ul {
+    max-width: 600px;
+    margin: 2rem auto;
 }
 
-/* Review Area Styles */
+#social li {
+    background: var(--white);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#social li:hover {
+    transform: translateY(-2px);
+}
+
+/* Review Section */
 #review-area {
-    padding: 20px;
-    background: linear-gradient(135deg, #E74C3C 25%, #C0392B 75%); /* Matching the background style of other sections */
-    border-radius: 8px;
-    margin: 20px 0;
-    animation: fadeInUp 2s ease-in-out forwards; /* Apply animation */
+    padding: 6rem 2rem 4rem;
+    background: var(--light-bg);
 }
 
 #review-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#review-form label {
-    font-family: 'Georgia', serif;
-    font-style: italic;
-    background: -webkit-linear-gradient(white, #E0E0E0); /* Gradient for text */
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 #review-form textarea {
     width: 100%;
-    max-width: 600px;
-    padding: 10px;
-    border: 1px solid #E0E0E0;
+    padding: 1rem;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    font-family: Arial, sans-serif;
-    font-size: 1em;
-    margin-bottom: 20px;
+    margin: 1rem 0;
+    font-size: 1rem;
 }
 
 #review-form button {
-    background-color: #C0392B;
-    color: #E0E0E0;
-    padding: 10px 20px;
+    background: var(--secondary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
-    font-size: 1em;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 #review-form button:hover {
-    background-color: #E74C3C;
+    background: var(--primary-color);
 }
 
-/* Keyframes for fade-in and slide-up animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Footer */
+footer {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+    position: relative;
 }
 
-
-/* Keyframes for fade-in and slide-up animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Media Queries for Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
     .paragraph {
-        flex-direction: column; /* Change flex direction to column for smaller screens */
-        text-align: center;
+        flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 2rem;
     }
-
-    .image {
-        text-align: center; /* Center images on smaller screens */
-        margin-top: 10px; /* Add margin for spacing */
+    
+    .hero {
+        padding: 6rem 1rem 3rem;
     }
-
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        padding: 1rem;
+    }
+    
     nav a {
-        display: block; /* Stack nav links vertically */
-        margin: 10px 0; /* Add margin between links */
+        margin: 0 0.5rem;
+        font-size: 0.9rem;
     }
-
-    footer {
-        position: static; /* Make footer static for smaller screens */
-        border-radius: 0;
-    }
-}
-
-.tab {
-    display: none;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 2s ease-in-out forwards;
-}
-
-.tab.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
 }
