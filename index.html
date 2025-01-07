@@ -5,108 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patton's PC Clinic - Professional Computer Repair Services</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <a href="#" onclick="showTab('home')">Home</a>
-        <a href="#" onclick="showTab('services')">Services</a>
-        <a href="#" onclick="showTab('calendar')">Schedule Repair</a>
-        <a href="#" onclick="showTab('social')">Connect</a>
-        <a href="#" onclick="showTab('review-area')">Reviews</a>
+        <a href="/">Home</a>
+        <a href="/services">Services</a>
+        <a href="/scheduling">Schedule Repair</a>
+        <a href="/connect">Connect</a>
+        <a href="/reviews">Reviews</a>
     </nav>
 
-    <div id="home" class="tab active">
-        <div class="hero">
-            <h1>Patton's PC Clinic</h1>
-            <h2>Professional Computer Repair Services at Affordable Prices</h2>
-        </div>
-        
-        <div class="paragraph">
-            <div class="text">
-                <h3>Expert Computer Repair Services</h3>
-                <p>At Patton's PC Clinic, we specialize in comprehensive computer repair solutions for both personal and business needs. With our expertise in hardware and software troubleshooting, we ensure your devices are restored to optimal performance quickly and efficiently.</p>
-            </div>
-            <div class="image">
-                <img src="images/laptop.png" alt="Professional Computer Repair">
-            </div>
-        </div>
-
-        <div class="paragraph">
-            <div class="image">
-                <img src="images/business.jpg" alt="Quality Service Guarantee">
-            </div>
-            <div class="text">
-                <h3>Quality Service, Competitive Pricing</h3>
-                <p>We believe in transparent pricing and exceptional service. Our commitment to providing cost-effective solutions means you receive professional-grade repairs without the premium price tag. Every repair comes with our satisfaction guarantee.</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="calendar" class="tab">
-        <div class="hero">
-            <h1>Schedule Your Repair</h1>
-            <h2>Book a convenient time for your computer repair</h2>
-        </div>
-        <div class="calendly-inline-widget" data-url="https://calendly.com/pattonspcs?background_color=f8f9fa&text_color=2c3e50&primary_color=3498db" style="min-width:320px;height:700px;"></div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    </div>
-
-    <div id="social" class="tab">
-        <div class="hero">
-            <h1>Connect With Us</h1>
-            <h2>Follow us on social media for tech tips and updates</h2>
-        </div>
-        <ul>
-            <li>
-                <img src="images/instalogo.png" alt="Instagram Logo">
-                <a href="https://instagram.com/pattons_pcs" target="_blank">Follow us on Instagram</a>
-            </li>
-            <li>
-                <img src="images/youtubelogo.png" alt="YouTube Logo">
-                <a href="https://youtube.com/@pattons-pcs" target="_blank">Subscribe to our YouTube Channel</a>
-            </li>
-        </ul>
-    </div>
-
-    <div id="review-area" class="tab">
-        <div class="hero">
-            <h1>Client Reviews</h1>
-            <h2>Share your experience with our services</h2>
-        </div>
-        <form id="review-form">
-            <label for="review">Your Feedback</label>
-            <textarea id="review" name="review" rows="4" placeholder="Tell us about your experience..." required></textarea>
-            <button type="submit">Submit Review</button>
-        </form>
+    <div id="content">
+        <!-- Content will be loaded here -->
     </div>
 
     <footer>
         <p>&copy; 2024 Patton's PC Clinic | Professional Computer Repair Services</p>
     </footer>
 
-    <script>
-        function showTab(tabId) {
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
-            document.getElementById(tabId).classList.add('active');
-            window.scrollTo(0, 0);
-        }
-
-        window.addEventListener('load', function() {
-            const elements = document.querySelectorAll('.fade-in-up');
-            elements.forEach(element => {
-                element.style.opacity = 1;
-                element.style.transform = 'translateY(0)';
-            });
-        });
-    </script>
+    <script src="/js/router.js"></script>
 </body>
 </html>
